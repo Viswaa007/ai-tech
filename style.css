@@ -12,6 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f5f9ff;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 
@@ -190,9 +191,9 @@ body {
     opacity: 0.2;
     position: absolute;
     top: -50px;
-    right: 0;
+    right: -100px;
+    max-width: 100%;
 }
-
 
 
 /* DASHBOARD CARD */
@@ -446,7 +447,7 @@ body {
     height: 250px;
     background: #38bdf8;
     top: 0;
-    left: -50px;
+    left: 0;
     opacity: 0.15;
 }
 
@@ -455,7 +456,7 @@ body {
     height: 300px;
     background: #2563eb;
     bottom: 0;
-    right: -50px;
+    right: 0;
     opacity: 0.15;
 }
 
@@ -762,13 +763,13 @@ body {
 /* PROCESS CARD */
 
 .process-card {
-    background: #fff7eb;
+    background: hsla(189, 100%, 96%, 0.674);
     padding: 35px;
     border-radius: 25px;
     height: 100%;
     position: relative;
     transition: 0.4s;
-    border: 1px solid #f1e5d0;
+    border: 1px solid hwb(204 82% 5% / 0.588);
 }
 
 .process-card:hover {
@@ -919,7 +920,7 @@ body {
 /* IDEA BANNER */
 
 .idea-banner {
-    background: linear-gradient(45deg, #062c30, #0f766e);
+    background: linear-gradient(45deg, #063021, #1100ff);
     padding: 80px 40px;
     border-radius: 0 0 30px 30px;
 }
@@ -939,7 +940,7 @@ body {
 
 .idea-btn {
     margin-top: 30px;
-    background: #ff6b00;
+    background: #007bff;
     color: white;
     padding: 14px 35px;
     border-radius: 50px;
@@ -1016,7 +1017,7 @@ body {
 /* PARTNER SECTION */
 
 .partner-section {
-    background: #fff7eb;
+    background: lab(98.66% -7.42 8.19 / 0.355);
     padding: 80px;
     border-radius: 30px;
 }
@@ -1171,7 +1172,7 @@ body {
 /* FOOTER SECTION */
 
 .footer-section {
-    background: #032b2b;
+    background: linear-gradient(45deg, #000000, #0015ff);
     padding: 100px 0 40px;
 }
 
@@ -1193,7 +1194,7 @@ body {
 }
 
 .footer-btn {
-    background: #ff6b00;
+    background: #cb484a;
     color: white;
     padding: 15px 34px;
     border-radius: 50px;
@@ -1210,7 +1211,7 @@ body {
 /* LOCATION */
 
 .location-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(152, 156, 227, 0.799);
     border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 30px;
     border-radius: 25px;
@@ -1342,4 +1343,63 @@ body {
         font-size: 30px;
     }
 
+}
+
+.hero-section,
+.hero-image,
+.partner-section {
+    overflow: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hero-section,
+.hero-image,
+.partner-section,
+.showcase-section,
+.process-section {
+    overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+
+    .circle-bg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .floating-card {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .partner-section {
+        padding: 20px 15px;
+    }
+
+    .cta-box {
+        padding: 20px 15px;
+    }
+
+    .dashboard-card {
+        padding: 20px;
+    }
+
+    .chart-bars {
+        gap: 8px;
+    }
+
+    .bar {
+        width: 35px;
+    }
+
+    .image-layout {
+        flex-direction: column;
+    }
 }
