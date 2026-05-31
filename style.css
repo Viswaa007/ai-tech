@@ -735,6 +735,11 @@ body {
         padding: 35px 25px;
     }
 
+    .award-card {
+        min-height: 220px;
+        padding: 20px 15px;
+    }
+
 }
 
 /* PROCESS SECTION */
@@ -1025,14 +1030,17 @@ body {
 
 .partner-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
 }
 
 .partner-logo {
     background: white;
     border: 1px solid #e5e7eb;
-    height: 100px;
+    width: 100%;
+    max-width: 140px;
+    height: 140px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
