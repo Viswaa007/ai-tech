@@ -75,9 +75,9 @@ body {
 /* HERO SECTION */
 
 .hero-section {
-    min-height: 100vh;
-    position: relative;
-    padding-top: 120px;
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
 
     background:
         radial-gradient(circle at top left, rgba(37, 99, 235, 0.15), transparent 30%),
@@ -91,7 +91,7 @@ body {
 
 .hero-text h1 {
     color: #111827;
-    font-size: 72px;
+    font-size: 50px;
     font-weight: 800;
     line-height: 1.2;
     margin-top: 25px;
@@ -1377,6 +1377,8 @@ body {
         width: 100%;
         max-width: 100%;
         margin-top: 20px;
+        right: 10px;
+        bottom: 10px;
     }
 
     .partner-section {
@@ -1388,6 +1390,8 @@ body {
     }
 
     .dashboard-card {
+        width: 100%;
+        max-width: 100%;
         padding: 20px;
     }
 
@@ -1402,4 +1406,37 @@ body {
     .image-layout {
         flex-direction: column;
     }
+}
+
+@media (max-width:576px) {
+
+    .hero-section {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .hero-image {
+        margin-top: 30px !important;
+    }
+
+    .feature-wrapper {
+        margin-top: 25px;
+        gap: 10px;
+    }
+
+}
+@media(max-width:576px){
+
+    .award-card{
+        padding:15px 8px;
+    }
+
+    .award-card i{
+        font-size:28px;
+    }
+
+    .award-card h5{
+        font-size:12px;
+    }
+
 }
