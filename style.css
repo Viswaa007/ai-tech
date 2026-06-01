@@ -1190,7 +1190,7 @@ body {
 /* FOOTER SECTION */
 
 .footer-section {
-    background: linear-gradient(45deg, #000000, #0015ff);
+    background: linear-gradient(45deg, #000000, #383dc3);
     padding: 100px 0 40px;
 }
 
@@ -1212,7 +1212,7 @@ body {
 }
 
 .footer-btn {
-    background: #cb484a;
+    background: #ff0101;
     color: white;
     padding: 15px 34px;
     border-radius: 50px;
