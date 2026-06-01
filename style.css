@@ -11,7 +11,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #f5f9ff;
-    overflow-x: hidden;
+    overflow-x:hidden !important;
     max-width: 100%;
 }
 
@@ -194,8 +194,11 @@ body {
     opacity: 0.2;
     position: absolute;
     top: -50px;
-    right: -100px;
+
+    right: 0;
+
     max-width: 100%;
+    overflow: hidden;
 }
 
 
@@ -208,6 +211,7 @@ body {
     border-radius: 30px;
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
 
 .top-dots {
@@ -246,11 +250,14 @@ body {
 .chart-bars {
     display: flex;
     align-items: end;
-    gap: 15px;
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bar {
-    width: 50px;
+    width: 100%;
+    max-width: 40px;
     border-radius: 12px 12px 0 0;
     background: linear-gradient(45deg, #2563eb, #38bdf8);
 }
@@ -409,7 +416,7 @@ body {
 }
 
 .grid-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
 }
 
 .dark-card {
@@ -643,7 +650,7 @@ body {
 .cta-box {
     margin-top: 100px;
     background: linear-gradient(45deg, #0f172a, #1e3a8a);
-    padding: 50px;
+    padding: 60px 70px;
     border-radius: 30px;
 }
 
@@ -732,7 +739,7 @@ body {
     }
 
     .cta-box {
-        padding: 35px 25px;
+        padding: 30px 20px;
     }
 
     .award-card {
@@ -892,8 +899,10 @@ body {
         font-size: 38px;
     }
 
-    .logo-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .logo-box {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        font-size: 16px;
     }
 
 }
@@ -1428,4 +1437,22 @@ body {
     .feature-wrapper {
         margin-top: 20px;
     }
+}
+
+@media(max-width:991px) {
+
+    .nav-btn {
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .circle-bg {
+        right: -40px;
+    }
+
 }
